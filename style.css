@@ -219,6 +219,7 @@ font-weight: 700;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    margin-top: 20px;
 }
 .play, .play2, .play3, .play4{
     font-size: 50px;
@@ -555,6 +556,7 @@ font-weight: 700;
   }
   .video-card{
     flex-direction: column;
+    margin-bottom: 0;
   }
   .play-section-container{
     flex-direction: column;
@@ -583,7 +585,7 @@ font-weight: 700;
     width: 40px;
     height: 20px;
     position: absolute;
-    bottom: -229rem;
+    bottom: -235rem;
     height: 100px;
   }
   .extra-image img{
