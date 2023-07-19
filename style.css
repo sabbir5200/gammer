@@ -70,20 +70,30 @@ font-weight: 700;
     font-weight: 500;
 
 }
+
 .banner-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
+.banner-content{
+    width: 100%;
+}
+/* .banner-image{
+    width: 50%;
+} */
 .banner-title1{
     color: #0B0223;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 140px;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
 }
 .banner-title2{
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 140px;
     font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
@@ -97,10 +107,12 @@ font-weight: 700;
     font-size: 20px;
     font-weight: 500;
     text-transform: lowercase;
+    margin-left: 140px;
 }
 .button{
     display: flex;
     gap: 1.3rem;
+    margin-left: 140px;
 }
 .primary-btn1{
     margin-top: 2rem;
@@ -122,6 +134,12 @@ font-weight: 700;
     border: none;
     color: #FFF;
 }
+.banner-image{
+    width: 100%;
+
+}
+
+
 .banner-container-2{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: flex;
@@ -143,7 +161,7 @@ font-weight: 700;
     -webkit-text-fill-color: transparent;
 }
 .banner-2-paragraph{
-    width: 520px;
+    width: 100%;
     color: #534C64;
     text-align: right;
     font-size: 18px;
@@ -266,23 +284,25 @@ font-weight: 700;
 
 
 .main-careers-container{
-    width: 1920px;
-    height: 821px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-}
-.main-careers-container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.careers-images{
+    width: 100%;
+    height: 100%;
 }
 .careers-main-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 4rem;
     margin-top: 20px;
     color: #FFF;
     font-size: 20px;
+    flex-wrap: wrap;
     font-weight: 600;
     line-height: 40px;
 }
@@ -291,22 +311,24 @@ font-weight: 700;
     margin-left: 7rem;
 }
 .c-title{
-    width: 426px;
+    width: 100%;
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
+    margin-left: 2rem;
 }
 .c-paragraph{
-   width: 680px;
+   width: 100%;
    color: #FFF;
     font-size: 18px;
+    margin-left: 2rem;
     font-weight: 400;
     line-height: 30px;
 }
 .c-list{
-    width: 337px;
-    height: 240px;
+    width: 100%;
+    /* height: 240px; */
 }
 .career-btn{
     display: inline-flex;
@@ -318,11 +340,12 @@ font-weight: 700;
     border: none;
     margin-top: 2rem;
     margin-left: 7rem;
+    margin-bottom: 2rem;
     color: rgb(218, 75, 122);
 }
 .parent-container{
-    width: 1920px;
-    height: 427px;
+    width: 100%;
+    height: 100%;
 }
 .btn{
     border: none;
@@ -340,7 +363,7 @@ font-weight: 700;
     justify-content: space-evenly;
     margin-top: 6rem;
     cursor: pointer;
-    
+    flex-wrap: wrap;
 }
 .btn-p{
     color: #0B0223;
@@ -360,13 +383,6 @@ font-weight: 700;
     text-decoration: none;
 }
 
-
-/* .footer-parent{
-    display: flex;
-    width: 1920px;
-    height: 636px;
-    background: #0B0223;
-} */
 .footer-logo{
     display: flex;
     justify-content: center;
@@ -382,9 +398,6 @@ font-weight: 700;
     color: white;
     font-size: 45px;
     font-weight: 700;
-}
-.test{
-    background-color: blue;
 }
 .footer{
     padding: 16px;
@@ -409,6 +422,7 @@ font-weight: 700;
     gap: 64px;
     margin-top: 24px;
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 .footer-logo > i{
     margin-bottom: 16px;
@@ -424,4 +438,150 @@ font-weight: 700;
 }
 .cr{
     color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* responsive for mobile device */
+
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-logo{
+        flex-direction: column;
+        margin-top: 4.5rem;
+    }
+    .nav-items{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-button{
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .banner-container{
+        flex-direction: column;
+        
+    }
+    .banner-title1, .banner-title2, .banner-paragraph, .button{
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+    .banner-title2{
+        font-size: 5rem
+    }
+    .banner-paragraph{
+        padding: 0;
+        margin-left: 2.5rem;
+    }
+    .button{
+        margin: 0;
+        padding: 0;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    .re-image{
+        width: 300px;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+  .banner-container-2{
+   flex-direction: column;
+  }
+  .re-image-2{
+    width: 350px;
+  }
+  .banner-2-title{
+    margin-left: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+  .banner-container2-content{
+    width: 100%;
+  }
+  .banner-2-title{
+    width: 100%;
+    padding-right: 20px;
+    align-items: center;
+    margin-left: 0;
+  }
+  .banner-2-paragraph{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .primary-btn-banner-2{
+    width: 100%;
+    margin: 0;
+  }
+  .banner-2-title2{
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .video-card{
+    flex-direction: column;
+  }
+  .play-section-container{
+    flex-direction: column;
+  }
+  .play-title {
+    width: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .play-paragraph{
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .play-section-image{
+    
+  }
+  .play-img{
+    margin-top: 100px;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+  }
+  .extra-image{
+    left: 0;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    bottom: -229rem;
+    height: 100px;
+  }
+  .extra-image img{
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+  }
+  .main-careers-container{
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .parent-container{
+    width: 100%;
+  }
+
+  .career-info{
+    width: 100px;
+  }
+  .careers-image img{
+    width: 300px;
+  }
+  .footer-li{
+    gap: 30px;
+  }
+  .career-content{
+    margin-top: 0;
+  }
 }
