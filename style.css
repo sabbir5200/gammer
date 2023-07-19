@@ -337,7 +337,7 @@ font-weight: 700;
     line-height: 40px;
 }
 .career-info{
-    width: 65%;
+    width: 55%;
     margin-left: 7rem;
 }
 .c-title{
@@ -581,7 +581,7 @@ font-weight: 700;
     margin-top: 30px;
   }
   .play-section-image{
-    
+    position: relative;
   }
   .play-img{
     margin-top: 100px;
@@ -594,12 +594,12 @@ font-weight: 700;
     width: 40px;
     height: 20px;
     position: absolute;
-    bottom: -228rem;
+    bottom: 0;
     height: 100px;
   }
   .extra-image img{
     width: 170px;
-    /* height: 170px; */
+    height: 190px;
     padding: 10px;
   }
   .main-careers-container{
@@ -614,10 +614,12 @@ font-weight: 700;
     margin-bottom: -20px;
   }
   .c-title{
-    margin-left: 0;
+    margin-left: 30px;
+    text-align: center;
   }
   .career-info{
-    width: 100px;
+    width: 100%;
+    margin-left: 0px;
   }
   .careers-image img{
     width: 100%;
@@ -627,5 +629,9 @@ font-weight: 700;
   }
   .career-content{
     margin-top: 0;
+  }
+  .pl{
+    margin: 40px;
+    padding: 10px;
   }
 }
